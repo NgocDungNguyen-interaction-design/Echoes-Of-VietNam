@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the regional flavours and food stories of Vietnam.">
+  <title>Food — Echoes of Vietnam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/food.css">
+</head>
+<body class="inner-page food-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Return to Echoes of Vietnam homepage"><img src="assets/logo.png" alt="Echoes of Vietnam"></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="food.html">Food</a>
+      <a href="saved.html">Saved <span class="saved-count" data-saved-count>0</span></a>
+    </nav>
+    <a class="nav-search" href="search.html" aria-label="Search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+    </a>
+  </header>
+
+  <main>
+    <section id="regionLanding" class="food-shell content-width">
+      <div class="page-heading">
+        <p class="eyebrow">EXPLORE VIETNAMESE CULTURE</p>
+        <h1>A Taste of Vietnam</h1>
+        <p class="lead">Three regions. Countless flavours. One culinary heritage.</p>
+        <p class="intro">Vietnamese cuisine is a reflection of the country's landscapes, traditions and people. From the delicate flavours of the North to the bold and vibrant dishes of the Central region, and the rich, generous flavours of the South, every region has its own culinary identity.</p>
+        <p class="intro">Explore Vietnam through its ingredients, cooking traditions and regional specialities. Discover the stories behind nine iconic dishes and experience the diverse flavours that make Vietnamese cuisine unique.</p>
+      </div>
+
+      <div class="region-layout">
+        <div class="map-panel">
+          <img src="assets/food/vietnam-relief-map.png" alt="Relief map of Vietnam, including the Paracel and Spratly Islands">
+          <p class="map-caption">A culinary journey from North to South</p>
+        </div>
+        <div class="region-list" id="regionCards" aria-label="Choose a region"></div>
+      </div>
+    </section>
+
+    <section id="regionMenu" class="food-shell menu-page content-width" hidden>
+      <button class="back-button" id="backToRegions">← All regions</button>
+      <div class="menu-heading">
+        <p class="eyebrow">A TASTE OF VIETNAM</p>
+        <h1 id="menuTitle"></h1>
+        <p class="lead" id="menuTagline"></p>
+        <p class="intro" id="menuIntro"></p>
+      </div>
+      <div class="dish-list" id="dishList"></div>
+      <div class="menu-end">
+        <p>Every dish carries a story.</p>
+        <button class="back-button" id="backToRegionsBottom">Explore another region</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer compact-footer">
+    <div class="footer-inner content-width">
+      <div class="footer-follow"><p class="eyebrow">FOLLOW OUR JOURNEY</p><div class="social-links"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Facebook">FB</a><a href="#" aria-label="X">X</a><a href="#" aria-label="YouTube">YouTube</a></div></div>
+      <p class="copyright">© 2026 Echoes of Vietnam</p>
+      <button class="back-top" data-back-top>BACK TO THE TOP ↑</button>
+    </div>
+  </footer>
+
+  <script src="js/food-data.js"></script>
+  <script src="js/food.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

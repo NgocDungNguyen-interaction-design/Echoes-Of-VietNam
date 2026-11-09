@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saved — Echoes of Vietnam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-page">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Echoes of Vietnam homepage"><img src="assets/logo.png" alt="Echoes of Vietnam"></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="search.html">Explore</a><a class="active" href="saved.html">Saved <span class="saved-count" data-saved-count>0</span></a>
+    </nav>
+    <a class="nav-search" href="search.html" aria-label="Search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+    </a>
+  </header>
+  <main class="page-shell content-width saved-page">
+    <div class="page-intro">
+      <p class="eyebrow">YOUR PERSONAL COLLECTION</p>
+      <h1>Saved discoveries.</h1>
+      <p>Keep the stories and cultural details you want to return to.</p>
+    </div>
+    <div class="saved-layout">
+      <aside class="saved-sidebar">
+        <p class="eyebrow">YOUR LIBRARY</p>
+        <h2>My collection</h2>
+        <p class="sidebar-description">Your saved discoveries are kept here on this device.</p>
+        <div class="library-stat"><span id="saved-total">0</span><small>Saved items</small></div>
+        <button class="clear-saved" id="clear-saved">CLEAR COLLECTION</button>
+      </aside>
+      <section class="saved-content">
+        <div class="results-heading">
+          <div><p class="eyebrow">BOOKMARKED BY YOU</p><h2>Things to explore again</h2></div>
+          <span class="result-count" id="saved-label">0 SAVED</span>
+        </div>
+        <div class="saved-grid" id="saved-grid"></div>
+        <div class="saved-empty" id="saved-empty">
+          <div class="empty-lotus">❀</div>
+          <h3>Your collection is waiting.</h3>
+          <p>Save a category or an individual discovery using the heart button wherever you see it.</p>
+          <a class="primary-button" href="index.html#explore">EXPLORE CATEGORIES <span>↗</span></a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer compact-footer">
+    <div class="footer-inner content-width">
+      <div class="footer-follow"><p class="eyebrow">FOLLOW OUR JOURNEY</p><div class="social-links"><a href="#">IG</a><a href="#">FB</a><a href="#">X</a><a href="#">YouTube</a></div></div>
+      <p class="copyright">© 2026 Echoes of Vietnam</p><button class="back-top" data-back-top>BACK TO THE TOP ↑</button>
+    </div>
+  </footer>
+  <script src="js/data.js"></script><script src="js/main.js"></script><script src="js/saved.js"></script>
+</body>
+</html>

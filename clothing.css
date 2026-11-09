@@ -1,0 +1,38 @@
+.clothing-page { background: #f5ecd9 url("../assets/page-background.png") center top / cover fixed no-repeat; }
+.clothing-shell { padding-top: 66px; padding-bottom: 80px; }
+.clothing-intro { max-width: 900px; margin: 0 auto 62px; text-align: center; }
+.clothing-intro h1 { margin: 0; color: var(--green); font: 600 clamp(43px, 5vw, 65px)/1 var(--serif); }
+.clothing-subtitle { margin: 10px 0 22px !important; color: var(--terracotta) !important; font: italic 23px var(--serif) !important; }
+.clothing-intro > p:not(.eyebrow) { max-width: 800px; margin: 0 auto 12px; color: #655a48; font: 17px/1.65 var(--serif); }
+.clothing-index { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 30px; }
+.clothing-index a { padding: 10px 15px; border: 1px solid rgba(143,45,30,.25); background: rgba(255,250,239,.65); color: var(--green); font: 600 13px var(--serif); transition: .2s; }
+.clothing-index a span { margin-right: 8px; color: var(--terracotta); font: 700 9px var(--sans); letter-spacing: .1em; }
+.clothing-index a:hover { background: var(--red); color: #fff5e3; }
+.clothing-index a:hover span { color: #f0c98e; }
+.garment-list { display: grid; gap: 58px; }
+.garment-entry { display: grid; grid-template-columns: minmax(300px, .78fr) minmax(0, 1.22fr); align-items: start; gap: clamp(28px, 5vw, 68px); padding: 30px; background: rgba(255,250,239,.76); border: 1px solid rgba(143,91,44,.28); box-shadow: 0 15px 38px rgba(58,39,20,.08); scroll-margin-top: 30px; }
+.garment-entry.reverse .garment-visual { order: 2; }
+.garment-entry.reverse .garment-content { order: 1; }
+.garment-visual { position: sticky; top: 24px; overflow: hidden; background: #4b2d1d; border: 1px solid rgba(143,91,44,.45); }
+.garment-visual img { display: block; width: 100%; max-height: 790px; aspect-ratio: 2/3; object-fit: cover; object-position: center; }
+.garment-visual::after { content: ""; position: absolute; inset: 0; pointer-events: none; box-shadow: inset 0 0 0 9px rgba(246,226,190,.2); }
+.garment-number { position: absolute; top: 17px; left: 17px; padding: 7px 11px; color: #fff4df; background: rgba(100,35,20,.82); font-size: 10px; letter-spacing: .16em; }
+.garment-visual > p { position: absolute; bottom: 0; left: 0; right: 0; margin: 0; padding: 23px 15px 18px; color: #fff4df; background: linear-gradient(transparent, rgba(40,24,14,.85)); text-align: center; font: 600 21px var(--serif); letter-spacing: .14em; }
+.garment-content { min-width: 0; }
+.garment-content > .eyebrow { margin: 4px 0 8px; color: var(--terracotta); }
+.garment-content h2 { margin: 0; color: var(--green); font: 600 clamp(38px, 4vw, 52px)/1 var(--serif); }
+.garment-tagline { margin: 8px 0 25px; color: #987044; font: italic 19px var(--serif); }
+.garment-content section { padding: 19px 0 17px; border-top: 1px solid rgba(143,91,44,.2); }
+.garment-content section h3 { margin: 0 0 9px; color: var(--red); font: 600 25px/1.1 var(--serif); }
+.garment-content section p, .garment-content li { color: #5f5545; font: 15px/1.68 var(--serif); }
+.garment-content section p { margin: 0 0 10px; }
+.garment-content section p:last-child { margin-bottom: 0; }
+.garment-content ul { margin: 5px 0 10px; padding-left: 21px; }
+.garment-content li { padding: 2px 0; }
+.garment-ending { margin: 68px auto 0; text-align: center; }
+.clothing-ending > span { color: var(--gold); font: 34px var(--serif); }
+.clothing-ending p { margin: 8px 0 20px; color: var(--green); font: italic 26px/1.3 var(--serif); }
+.clothing-ending a { display: inline-block; padding: 13px 19px; border: 1px solid var(--red); color: var(--red); font-size: 9px; font-weight: 700; letter-spacing: .15em; }
+.clothing-ending a:hover { background: var(--red); color: #fff4df; }
+@media (max-width: 850px) { .garment-entry { grid-template-columns: minmax(220px,.72fr) minmax(0,1.28fr); gap: 25px; padding: 20px; } .garment-visual { top: 15px; } }
+@media (max-width: 650px) { .clothing-shell { padding-top: 45px; } .clothing-intro { margin-bottom: 38px; } .clothing-subtitle { font-size: 20px !important; } .clothing-intro > p:not(.eyebrow) { font-size: 16px; } .clothing-index { gap: 7px; } .clothing-index a { padding: 9px 10px; font-size: 12px; } .garment-list { gap: 28px; } .garment-entry, .garment-entry.reverse { grid-template-columns: 1fr; gap: 22px; padding: 15px; } .garment-entry.reverse .garment-visual, .garment-entry.reverse .garment-content { order: initial; } .garment-visual { position: relative; top: auto; max-width: 430px; margin: 0 auto; width: 100%; } .garment-visual img { max-height: 620px; } .garment-content h2 { font-size: 42px; } .garment-content section h3 { font-size: 23px; } .garment-content section p, .garment-content li { font-size: 15px; } }

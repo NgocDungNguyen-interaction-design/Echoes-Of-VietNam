@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Vietnamese stories, food, clothing, crafts, heritage and architecture.">
+  <title>Echoes of Vietnam — Discover the stories behind a culture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-page">
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-content">
+        <div class="hero-tools">
+          <form class="hero-search" action="search.html" method="get" role="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+            <input type="search" name="q" placeholder="Search stories, food, places..." aria-label="Search Echoes of Vietnam">
+            <button type="submit">SEARCH</button>
+          </form>
+          <a class="hero-saved" href="saved.html">♡ <span>Saved</span> <span class="saved-count" data-saved-count>0</span></a>
+        </div>
+
+        <img class="hero-logo" src="assets/logo.png" alt="Echoes of Vietnam">
+
+        <div class="hero-introduction">
+          <h1>Discover the stories behind a culture.</h1>
+          <p>Vietnam is a land of stories, traditions and timeless beauty. From ancient legends and traditional cuisine to distinctive clothing, craftsmanship, heritage and architecture, every element carries a part of the country's identity.</p>
+          <p><strong>Echoes of Vietnam</strong> is an interactive digital journey that invites you to explore the richness of Vietnamese culture through its stories, traditions, objects and places.</p>
+          <p>Discover the past, experience the present, and uncover the stories that continue to shape Vietnam.</p>
+        </div>
+        <a class="hero-explore-link" href="#explore">EXPLORE THE SIX COLLECTIONS <span>↓</span></a>
+      </div>
+    </section>
+
+    <section class="explore-section content-width" id="explore">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">EXPLORE OUR CULTURE</p>
+          <h2>Six paths into Vietnam</h2>
+        </div>
+        <p class="section-note">Choose a path and discover the stories<br>that live within each part of our culture.</p>
+      </div>
+
+      <div class="category-grid" id="category-grid">
+        <article class="category-card" data-category="stories">
+          <a class="card-image-link" href="stories.html" aria-label="Explore Stories">
+            <img src="assets/card-stories.png" alt="Illustrated Stories category cover">
+            <span class="card-arrow">↗</span>
+          </a>
+          <div class="card-copy">
+            <div class="card-title-row"><h3>Stories</h3><button class="save-button" data-save="stories" aria-label="Save Stories category" aria-pressed="false">♡</button></div>
+            <h4>Legends, myths and stories passed through generations.</h4>
+            <p>Explore the legends, folklore and traditional stories that have shaped Vietnamese beliefs, values and cultural identity.</p>
+            <a class="text-link" href="stories.html">DISCOVER STORIES <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="category-card" data-category="food">
+          <a class="card-image-link" href="food.html" aria-label="Explore Food">
+            <img src="assets/card-food.png" alt="Illustrated Food category cover">
+            <span class="card-arrow">↗</span>
+          </a>
+          <div class="card-copy">
+            <div class="card-title-row"><h3>Food</h3><button class="save-button" data-save="food" aria-label="Save Food category" aria-pressed="false">♡</button></div>
+            <h4>A taste of Vietnam, from north to south.</h4>
+            <p>Discover the flavours, ingredients and culinary traditions that make Vietnamese cuisine unique, with distinctive dishes and food cultures across the country's three regions.</p>
+            <a class="text-link" href="food.html">DISCOVER FOOD <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="category-card" data-category="clothing">
+          <a class="card-image-link" href="clothing.html" aria-label="Explore Clothing">
+            <img src="assets/card-clothing.png" alt="Illustrated Clothing category cover">
+            <span class="card-arrow">↗</span>
+          </a>
+          <div class="card-copy">
+            <div class="card-title-row"><h3>Clothing</h3><button class="save-button" data-save="clothing" aria-label="Save Clothing category" aria-pressed="false">♡</button></div>
+            <h4>Tradition woven into every detail.</h4>
+            <p>Explore traditional Vietnamese clothing, its history, craftsmanship and the cultural meanings behind different styles.</p>
+            <a class="text-link" href="clothing.html">DISCOVER CLOTHING <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="category-card" data-category="craft">
+          <a class="card-image-link" href="craft.html" aria-label="Explore Craft">
+            <img src="assets/card-craft.png" alt="Illustrated Craft category cover">
+            <span class="card-arrow">↗</span>
+          </a>
+          <div class="card-copy">
+            <div class="card-title-row"><h3>Craft</h3><button class="save-button" data-save="craft" aria-label="Save Craft category" aria-pressed="false">♡</button></div>
+            <h4>The art of making, shaped by generations.</h4>
+            <p>Discover traditional Vietnamese crafts, handmade objects and the skills passed down through generations of artisans.</p>
+            <a class="text-link" href="craft.html">DISCOVER CRAFT <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="category-card" data-category="heritage">
+          <a class="card-image-link" href="heritage.html" aria-label="Explore Heritage">
+            <img src="assets/card-heritage.png" alt="Illustrated Heritage category cover">
+            <span class="card-arrow">↗</span>
+          </a>
+          <div class="card-copy">
+            <div class="card-title-row"><h3>Heritage</h3><button class="save-button" data-save="heritage" aria-label="Save Heritage category" aria-pressed="false">♡</button></div>
+            <h4>Preserving the past, connecting generations.</h4>
+            <p>Explore Vietnam's cultural heritage through its traditions, historical landmarks, festivals and practices that continue to hold meaning today.</p>
+            <a class="text-link" href="heritage.html">DISCOVER HERITAGE <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="category-card" data-category="architecture">
+          <a class="card-image-link" href="architecture.html" aria-label="Explore Architecture">
+            <img src="assets/card-architecture.png" alt="Illustrated Architecture category cover">
+            <span class="card-arrow">↗</span>
+          </a>
+          <div class="card-copy">
+            <div class="card-title-row"><h3>Architecture</h3><button class="save-button" data-save="architecture" aria-label="Save Architecture category" aria-pressed="false">♡</button></div>
+            <h4>Stories told through spaces and structures.</h4>
+            <p>Discover the architectural styles, cultural influences and distinctive spaces that reflect Vietnam's history and identity.</p>
+            <a class="text-link" href="architecture.html">DISCOVER ARCHITECTURE <span>→</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner content-width">
+      <div class="footer-follow">
+        <p class="eyebrow">FOLLOW OUR JOURNEY</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="X">X</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Echoes of Vietnam</p>
+      <button class="back-top" data-back-top>BACK TO THE TOP ↑</button>
+    </div>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

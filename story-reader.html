@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reading a Story — Echoes of Vietnam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-page story-reader-page">
+  <header class="site-header reader-header">
+    <a class="brand" href="index.html" aria-label="Return to Echoes of Vietnam homepage"><img src="assets/logo.png" alt="Echoes of Vietnam"></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><a class="active" href="stories.html">Stories</a><a href="saved.html">Saved <span class="saved-count" data-saved-count>0</span></a>
+    </nav>
+    <a class="nav-search" href="search.html" aria-label="Search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+    </a>
+  </header>
+
+  <main class="reader-shell">
+    <a class="reader-back" href="stories.html">← ALL STORIES</a>
+    <section class="reader-card" id="reader-card" aria-live="polite">
+      <div class="reader-topline">
+        <span class="reader-number" id="reader-number">01</span>
+        <span class="reader-section-label" id="reader-section-label">THE STORY</span>
+        <span class="reader-counter" id="reader-counter">01 / 01</span>
+      </div>
+      <div class="reader-progress"><span id="reader-progress-fill"></span></div>
+      <div class="reader-heading">
+        <button class="item-save-button" id="reader-save" type="button" aria-pressed="false">♡ <span>Save story</span></button>
+        <p class="eyebrow" id="reader-subtitle">A VIETNAMESE LEGEND</p>
+        <h1 id="reader-title">Story title</h1>
+      </div>
+      <div class="reader-message" id="reader-message" tabindex="0" role="button" aria-label="Tap to reveal the next part of the story">
+        <span class="message-ornament">❧</span>
+        <p id="reader-text"></p>
+      </div>
+      <div class="reader-controls">
+        <span class="reader-hint" id="reader-hint">TAP TO CONTINUE</span>
+        <button class="reader-next" id="reader-next" type="button">CONTINUE <span>↓</span></button>
+        <a class="reader-finish hidden" id="reader-finish" href="stories.html">FINISH STORY <span>↗</span></a>
+      </div>
+    </section>
+    <p class="reader-note">A story unfolds one passage at a time. Take your time and follow each echo.</p>
+  </main>
+
+  <footer class="site-footer compact-footer">
+    <div class="footer-inner content-width">
+      <div class="footer-follow"><p class="eyebrow">FOLLOW OUR JOURNEY</p><div class="social-links"><a href="#">IG</a><a href="#">FB</a><a href="#">X</a><a href="#">YouTube</a></div></div>
+      <p class="copyright">© 2026 Echoes of Vietnam</p><button class="back-top" data-back-top>BACK TO THE TOP ↑</button>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/stories-data.js"></script>
+  <script src="js/story-reader.js"></script>
+</body>
+</html>
